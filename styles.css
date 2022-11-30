@@ -1,6 +1,6 @@
 :root{
-    --pink: #f34ab2;
-    --fondo: #070109;
+    --logo: #ffeb3b;
+    --fondo: #020725;
 }
 
 *{
@@ -33,7 +33,7 @@ header .contenedor {
 header .logotipo {
     font-family: 'Bree Serif', serif;
     font-weight: normal;
-    color: var(--pink);
+    color: var(--logo);
     font-size: 40px;
 }
 
@@ -100,6 +100,43 @@ header nav a.activo {
 
 .pelicula-principal .boton i {
     margin-right: 1.25em;
+}
+
+/* Contenedor de peliculas */
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.container .pelicula {
+	text-align: center;
+}
+
+.container .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.container .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+    position:fixed;
+    bottom: 0;
+	background: #100a1f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
 }
 
 /* Media Queries */
